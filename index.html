@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML form</title>
+</head>
+
+<body>
+    <form action="" target="_blank" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Personal info:</legend>
+            <label for="fname">First name: </label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name: </label>
+            <input type="text" id="lname" name="lname"><br>
+            <input type="submit" value="Submit"><br>
+            <input type="radio" id="html" name="fav" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="java_script" name="fav" value="JS">
+            <label for="JS">Java Script</label><br>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1">i have a Bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2">i have a Car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3">i have a Boat</label>
+        </fieldset>
+    </form>
+    <form action="">
+        <label for="cars">Choose your favourite car:</label>
+        <select name="cars" id="cars">
+            <option value="Volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+    </form>
+    <form action="">
+        <textarea name="message" id="textarea" cols="30" rows="10">I'm Dhanush Gowda H K</textarea><br> <br>
+        <button onclick="alert('Your feedback submited')">Submit</button>
+    </form>
+    <form action="">
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+            <option value="Edge"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+        </datalist>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
